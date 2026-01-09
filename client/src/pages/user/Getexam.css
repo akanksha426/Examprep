@@ -1,0 +1,70 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px; /* Max width for the exam panel */
+}
+
+h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.alert-info {
+    background-color: #e7f1ff;
+    color: #007BFF;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.card {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.form-check-input {
+    margin-top: 3px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.label-text {
+    padding-left: 15px; /* Space between radio button and text */
+}

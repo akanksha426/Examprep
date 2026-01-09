@@ -1,0 +1,126 @@
+body{
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.addash{
+    background: #374a72;
+  min-height: 100vh;
+}
+.dash{
+   
+  background: linear-gradient(180deg, #94bdea, #89d5b8);
+  min-height: 100vh;
+  border-radius: 12px 0 0 12px;
+
+}
+.main2{
+
+
+ font-family: "Nunito", sans-serif;
+font-weight: bolder;
+ display: flex;
+
+}
+
+.side {
+ 
+ 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 20px 20px 0;
+}
+.side .side-item {
+    color: #333;
+  padding:15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition:  0.3s;
+  text-decoration: none;
+list-style: none;
+
+
+}
+.side .sidelink {
+    color: #333;
+  padding:12px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+ transition: all 0.2s ease;
+  text-decoration: none;
+list-style: none;
+font-weight: 500;
+
+}
+.side .side-item :hover{
+     background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(5px);
+
+}
+
+.image{
+    height: 70px;
+    width: 70px;
+}
+.icon{
+  justify-content: right;
+}
+/*session*/
+
+
+.sesinfo label {
+  font-weight: 500;
+  color: #333;
+  font-size: 19px;
+}
+.sesinfo .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.sesinfo .form-control:focus {
+  border-color: #0d6efd;
+  
+}
+.table thead th {
+  background: linear-gradient(to right, #8fd6e4, #0d6efd);
+  color: white;
+  border: none;
+  font-size: large;
+}
+.btn{
+  background-color: #0d6efd;
+  width: 100%;
+}
+.btn1{
+  background-color: #0d6efd;
+  width: 20%;
+}
+.ses-container{
+
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+.exam-container{
+
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+.btn2{
+  width:40%;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: linear-gradient(180deg, #e1dada9e, #ed0d0de3);
+ 
+  
+}
+.btn3{
+  width:40%;
+  margin-left: 10px;
+  background: linear-gradient(180deg, #e1dada9e, #07b9f4e3);
+}
+

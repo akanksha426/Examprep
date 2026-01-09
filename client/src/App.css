@@ -1,0 +1,108 @@
+body { background: linear-gradient(180deg, #c1d8f0, #d6f0e6);
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.headline {
+  height: 50px;
+  width: 100%;
+  margin-top: 15px;
+
+  text-align: center;
+
+}
+
+.headline h2 {
+  
+  color: rgb(8, 8, 8);
+  font-size: 25px;
+  font-weight: 700;
+}
+.b {
+  
+  color: rgb(7, 7, 8);
+  margin-top: 20px;
+  margin-bottom: -15px;
+  margin-left: 150px;
+
+}
+.bc {
+  
+  color: rgb(21, 21, 30);
+  margin-top: 20px;
+  margin-bottom: -15px;
+  margin-left: 110px;
+
+}
+
+.outer {
+ 
+  border-radius: 10px;
+
+  
+   box-shadow: 0 8px 20px rgba(15, 75, 152, 0.25);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.outer:hover {
+  transform: translateY(-4px);
+}
+
+.main-container label {
+  display: block;
+  font-weight: 500;
+  color: rgb(39, 39, 46);
+ margin-top: 20px;
+ font-size: 18px;
+}
+
+.main-container input {
+  height: 50px;
+  text-align: center;
+  border: 1px solid rgb(22, 22, 26);
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.main-container input:focus {
+  border-color: #15151b;
+  box-shadow: 0 0 6px rgba(76, 75, 104, 0.3);
+}
+
+.ab {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: rgb(68, 68, 237);
+  color: white;
+  font-weight: bold;  
+  cursor: pointer;
+ 
+}
+.my{
+    font-size: 19px;
+    font-weight: 500;
+}
+.custom-table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(15, 75, 152, 0.323);
+  
+}
+.cd{
+  width:150px;
+  margin-left: 150px;
+  box-shadow: 0 4px 15px rgba(3, 42, 94, 0.323);
+}
+.btn5{
+  background: linear-gradient(180deg, #e1dada9e, #07b9f4e3);
+  width: 70%;
+
+}

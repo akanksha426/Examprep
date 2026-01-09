@@ -1,0 +1,92 @@
+import React, { useState } from 'react'
+import './UserDashboard.css';
+import img1 from "../../images/Spi logo.png"
+import img2 from "../../images/imgs/profile.png"
+import { FaHome, FaUser, FaCalendarAlt, FaHistory, FaBook, FaBell, FaQuestionCircle, FaSignOutAlt ,FaClipboardList, FaKey } from 'react-icons/fa';
+import { Outlet } from 'react-router';
+
+const UserDashboard = () => {
+
+const role =localStorage.getItem('userRole')
+if(role=="user"){
+  var email=localStorage.getItem('userEmail')
+}
+else{
+  window.location.href='/'
+}
+const getGreeting=()=>{
+  const hour = new Date().getHours();
+  if(hour<12)return 'Good Morning 🌄';
+  if(hour<18)return 'Good Afternoon ☀️';
+  return'Good Evening ✨';
+};
+const handlelogout=()=>{
+  localStorage.removeItem('userEmail')
+    localStorage.removeItem('userRole')
+      localStorage.removeItem('userId')
+      window.location.href='/'
+}
+
+
+  return (
+    <div className='container-fluid addash'>
+    <div className='row'>
+        <div className=' admin col-sm-12 d-flex min-vh-100'>
+            <div className='col-sm-2 dash'>
+               <h3 className=' mt-4 'style={{textAlign:"center",padding:"8px", color: "#1e3a8a", textShadow:"2px 2px 5px  #398ee8ff"}}> Exam Prep</h3>
+               <ul className='side flex-column'>
+                <h5 style={{textAlign:"center", color: "#1e3a8a", textShadow:"2px 2px 5px  #398ee8ff"}}>User Dashboard</h5>
+               <br/>
+    
+        <li className='side-item'><a href="/userDashboard/myexams" className='sidelink'><FaCalendarAlt /> My Exams</a></li>
+        <li className='side-item'><a href="/userDashboard/myresult" className='sidelink'><FaHistory /> My Results</a></li>
+        <li className='side-item'><a href="/userDashboard/change" className='sidelink'><FaKey /> Change Password</a></li>
+
+       
+        <li className='side-item'><a href="/userDashboard/message" className='sidelink'><FaBell /> Message</a></li>
+        <li className='side-item'><a href="#" className='sidelink'><FaQuestionCircle /> Help & Support</a></li>
+        <li className='side-item' onClick={()=>{handlelogout()}}><a href="#" className='sidelink'><FaSignOutAlt /> Logout</a></li>
+
+               </ul>
+            </div>
+           <div className='col-sm-10'style={{ background: "#e9f5ffff" }}>
+            <div className='row'>
+               <div className='col-sm-12 main2  justify-content-between align-items-center'>
+    <h2 className=" mt-4 ms-5 " style={{color: "#1e3a8a", textShadow:"2px 2px 5px  #398ee8ff"}} >{getGreeting()}! {email}</h2>
+
+    <div className="d-flex flex-column align-items-center me-2">
+        <img 
+            src={img2} 
+          
+            style={{ width: "35px", height: "35px", borderRadius: "50%" }} 
+        />
+       <span>  <button 
+            style={{
+                color: "#333",
+                fontSize: "14px",
+               background:"none",
+                border: "none",
+              fontWeight:"500" }} 
+        >
+           My Profile
+        </button></span>
+    </div></div></div><div 
+  style={{
+    height: "4px",
+    background: "linear-gradient(90deg, #849de4ff, #3b82f6, #60a5fa)",
+    borderRadius: "2px",
+    margin: "15px 0"
+  }}
+></div>
+<div className='content'>
+  <Outlet/>
+</div>
+</div>
+        </div>
+       
+    </div>
+  </div>
+  )
+}
+
+export default UserDashboard
